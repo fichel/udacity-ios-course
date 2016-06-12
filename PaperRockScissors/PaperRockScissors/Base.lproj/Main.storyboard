@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11126" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11100"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PRSViewController" customModule="PaperRockScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="0sb-Zi-40n"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="sAM-cS-Ctc"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="txf-G4-R86"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01u-VD-9i9">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="txf-G4-R86" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="QFo-Du-yAl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sAM-cS-Ctc" secondAttribute="trailing" constant="33" id="REI-mb-7Md"/>
+                            <constraint firstItem="sAM-cS-Ctc" firstAttribute="top" secondItem="txf-G4-R86" secondAttribute="bottom" constant="37" id="Z6w-rW-laI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="01u-VD-9i9" secondAttribute="bottom" constant="250" id="aEA-qv-Kx1"/>
+                            <constraint firstItem="txf-G4-R86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaB-qD-mqC"/>
+                            <constraint firstItem="0sb-Zi-40n" firstAttribute="top" secondItem="txf-G4-R86" secondAttribute="bottom" constant="37" id="sic-rr-6zI"/>
+                            <constraint firstItem="0sb-Zi-40n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="vOP-1V-y2Y"/>
+                            <constraint firstItem="01u-VD-9i9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yi9-du-9nJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-509.60000000000002" y="-8.5457271364317844"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="VWR-u4-Nu1">
+            <objects>
+                <viewController id="7sS-Lq-iyk" customClass="ResultsViewController" customModule="PaperRockScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wez-sZ-Ola"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yuv-1e-VSf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uVY-jI-HYw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-4B-Q5Z"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the results for the game." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-jW-vKE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buP-AN-m4Q">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="7sS-Lq-iyk" eventType="touchUpInside" id="1Te-Sl-f1B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H8C-jW-vKE" firstAttribute="top" secondItem="BVc-4B-Q5Z" secondAttribute="bottom" constant="64" id="2Zh-cG-HfK"/>
+                            <constraint firstItem="BVc-4B-Q5Z" firstAttribute="top" secondItem="wez-sZ-Ola" secondAttribute="bottom" constant="60" id="7Sj-4A-BMl"/>
+                            <constraint firstItem="buP-AN-m4Q" firstAttribute="centerX" secondItem="H8C-jW-vKE" secondAttribute="centerX" id="9HQ-5A-7oG"/>
+                            <constraint firstItem="BVc-4B-Q5Z" firstAttribute="centerX" secondItem="uVY-jI-HYw" secondAttribute="centerX" id="RNo-Lo-ZCU"/>
+                            <constraint firstItem="buP-AN-m4Q" firstAttribute="top" secondItem="H8C-jW-vKE" secondAttribute="bottom" constant="107" id="Tnd-vu-R6H"/>
+                            <constraint firstItem="H8C-jW-vKE" firstAttribute="centerX" secondItem="BVc-4B-Q5Z" secondAttribute="centerX" id="xTv-8o-mFd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsImage" destination="BVc-4B-Q5Z" id="rtl-86-oaA"/>
+                        <outlet property="resultsLabel" destination="H8C-jW-vKE" id="t1C-uK-rik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hm8-Yv-et8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="-7.6461769115442282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PaperCoversRock" width="160" height="120"/>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+</document>
