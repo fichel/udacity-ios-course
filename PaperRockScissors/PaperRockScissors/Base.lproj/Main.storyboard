@@ -27,17 +27,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-3W-gtp" userLabel="rockBtn">
                                 <state key="normal" image="rock"/>
                                 <connections>
-                                    <action selector="chooseRockWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAe-e5-zuK"/>
+                                    <action selector="chooseRockWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRt-ZG-uSQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-7f-mDV" userLabel="scissorsBtn">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-7f-mDV" userLabel="scissorsBtn">
                                 <state key="normal" image="scissors"/>
                                 <connections>
-                                    <segue destination="7sS-Lq-iyk" kind="presentation" identifier="choosePaper" id="Bwd-s3-Ndc"/>
+                                    <segue destination="7sS-Lq-iyk" kind="presentation" identifier="showResults" id="HDm-Mt-KAM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-Of-UPh" userLabel="paperBtn">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-Of-UPh" userLabel="paperBtn">
                                 <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="choosePaperWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjf-9V-TsK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,9 +55,6 @@
                             <constraint firstItem="01u-VD-9i9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yi9-du-9nJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="7sS-Lq-iyk" kind="presentation" identifier="choosePaper" id="m6b-So-MVf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +72,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-4B-Q5Z"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-4B-Q5Z">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="83d-ZY-Vqs"/>
+                                    <constraint firstAttribute="height" constant="120" id="QPt-3r-QEa"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the results for the game." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-jW-vKE">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -112,7 +117,4 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="m6b-So-MVf"/>
-    </inferredMetricsTieBreakers>
 </document>
