@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D628A02C1D16F81200292347 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628A02B1D16F81200292347 /* EmojiTextFieldDelegate.swift */; };
+		D628A02E1D16F83300292347 /* ColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628A02D1D16F83300292347 /* ColorTextFieldDelegate.swift */; };
+		D6BD277F1D17630100AD20EF /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD277E1D17630100AD20EF /* RandomColorTextFieldDelegate.swift */; };
+		D6C705CC1D15FEF900CBB71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C705CB1D15FEF900CBB71A /* AppDelegate.swift */; };
+		D6C705CE1D15FEF900CBB71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C705CD1D15FEF900CBB71A /* ViewController.swift */; };
+		D6C705D11D15FEF900CBB71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C705CF1D15FEF900CBB71A /* Main.storyboard */; };
+		D6C705D31D15FEFA00CBB71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C705D21D15FEFA00CBB71A /* Assets.xcassets */; };
+		D6C705D61D15FEFA00CBB71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C705D41D15FEFA00CBB71A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D628A02B1D16F81200292347 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D628A02D1D16F83300292347 /* ColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D6BD277E1D17630100AD20EF /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomColorTextFieldDelegate.swift; path = Delegates/RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D6C705C81D15FEF900CBB71A /* TextFieldDelegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldDelegates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C705CB1D15FEF900CBB71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6C705CD1D15FEF900CBB71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6C705D01D15FEF900CBB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6C705D21D15FEFA00CBB71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6C705D51D15FEFA00CBB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6C705D71D15FEFA00CBB71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C705C51D15FEF900CBB71A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6C705BF1D15FEF900CBB71A = {
+			isa = PBXGroup;
+			children = (
+				D6C705CA1D15FEF900CBB71A /* TextFieldDelegates */,
+				D6C705C91D15FEF900CBB71A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C705C91D15FEF900CBB71A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C705C81D15FEF900CBB71A /* TextFieldDelegates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C705CA1D15FEF900CBB71A /* TextFieldDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				D6C705CB1D15FEF900CBB71A /* AppDelegate.swift */,
+				D6C705CD1D15FEF900CBB71A /* ViewController.swift */,
+				D6C705CF1D15FEF900CBB71A /* Main.storyboard */,
+				D6BD277E1D17630100AD20EF /* RandomColorTextFieldDelegate.swift */,
+				D6C705D21D15FEFA00CBB71A /* Assets.xcassets */,
+				D6C705D41D15FEFA00CBB71A /* LaunchScreen.storyboard */,
+				D6C705D71D15FEFA00CBB71A /* Info.plist */,
+				D628A02B1D16F81200292347 /* EmojiTextFieldDelegate.swift */,
+				D628A02D1D16F83300292347 /* ColorTextFieldDelegate.swift */,
+			);
+			path = TextFieldDelegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6C705C71D15FEF900CBB71A /* TextFieldDelegates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C705DA1D15FEFA00CBB71A /* Build configuration list for PBXNativeTarget "TextFieldDelegates" */;
+			buildPhases = (
+				D6C705C41D15FEF900CBB71A /* Sources */,
+				D6C705C51D15FEF900CBB71A /* Frameworks */,
+				D6C705C61D15FEF900CBB71A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldDelegates;
+			productName = TextFieldDelegates;
+			productReference = D6C705C81D15FEF900CBB71A /* TextFieldDelegates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C705C01D15FEF900CBB71A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = fichel;
+				TargetAttributes = {
+					D6C705C71D15FEF900CBB71A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = W654U8Z8UJ;
+						DevelopmentTeamName = "Andre Nascimento (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D6C705C31D15FEF900CBB71A /* Build configuration list for PBXProject "TextFieldDelegates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6C705BF1D15FEF900CBB71A;
+			productRefGroup = D6C705C91D15FEF900CBB71A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C705C71D15FEF900CBB71A /* TextFieldDelegates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6C705C61D15FEF900CBB71A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C705D61D15FEFA00CBB71A /* LaunchScreen.storyboard in Resources */,
+				D6C705D31D15FEFA00CBB71A /* Assets.xcassets in Resources */,
+				D6C705D11D15FEF900CBB71A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C705C41D15FEF900CBB71A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C705CE1D15FEF900CBB71A /* ViewController.swift in Sources */,
+				D628A02E1D16F83300292347 /* ColorTextFieldDelegate.swift in Sources */,
+				D628A02C1D16F81200292347 /* EmojiTextFieldDelegate.swift in Sources */,
+				D6C705CC1D15FEF900CBB71A /* AppDelegate.swift in Sources */,
+				D6BD277F1D17630100AD20EF /* RandomColorTextFieldDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6C705CF1D15FEF900CBB71A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C705D01D15FEF900CBB71A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6C705D41D15FEFA00CBB71A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C705D51D15FEFA00CBB71A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6C705D81D15FEFA00CBB71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPRESSION = lossless;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6C705D91D15FEFA00CBB71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6C705DB1D15FEFA00CBB71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldDelegates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fichel.TextFieldDelegates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6C705DC1D15FEFA00CBB71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldDelegates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fichel.TextFieldDelegates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C705C31D15FEF900CBB71A /* Build configuration list for PBXProject "TextFieldDelegates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C705D81D15FEFA00CBB71A /* Debug */,
+				D6C705D91D15FEFA00CBB71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C705DA1D15FEFA00CBB71A /* Build configuration list for PBXNativeTarget "TextFieldDelegates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C705DB1D15FEFA00CBB71A /* Debug */,
+				D6C705DC1D15FEFA00CBB71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6C705C01D15FEF900CBB71A /* Project object */;
+}
